@@ -11,7 +11,7 @@
 
           <NavigationMenuItem>
             <NavigationMenuLink as-child>
-              <RouterLink to="/" :class="[navigationMenuTriggerStyle(), 'bg-transparent hover:bg-sky-700 text-white-700 hover:text-slate-950']">
+              <RouterLink to="/" :class="[navigationMenuTriggerStyle(), 'bg-transparent hover:bg-sky-600 text-white-700 hover:text-slate-950']">
                 Accueil
               </RouterLink>
             </NavigationMenuLink>
@@ -19,14 +19,14 @@
 
           <NavigationMenuItem>
             <NavigationMenuLink as-child>
-              <RouterLink to="/about" :class="[navigationMenuTriggerStyle(), 'bg-transparent hover:bg-gray-50 text-white-700 hover:text-sky-600']">
+              <RouterLink to="/about" :class="[navigationMenuTriggerStyle(), 'bg-transparent hover:bg-sky-600 text-white-700 hover:text-slate-950']">
                 Présentation
               </RouterLink>
             </NavigationMenuLink>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuTrigger class="bg-transparent hover:bg-gray-50 text-white-700 hover:text-sky-600">
+            <NavigationMenuTrigger class="bg-transparent hover:bg-sky-600 text-white-700 hover:text-slate-950">
               Services
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -51,14 +51,14 @@
 
           <NavigationMenuItem>
             <NavigationMenuLink as-child>
-              <RouterLink to="/projects" :class="[navigationMenuTriggerStyle(), 'bg-transparent hover:bg-gray-50 text-white-700 hover:text-sky-600']">
+              <RouterLink to="/projects" :class="[navigationMenuTriggerStyle(), 'bg-transparent hover:bg-sky-600 text-white-700 hover:text-slate-950']">
                 Réalisation
               </RouterLink>
             </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
             <NavigationMenuLink as-child>
-              <RouterLink to="/mikrotik" :class="[navigationMenuTriggerStyle(), 'bg-transparent hover:bg-gray-50 text-white-700 hover:text-sky-600']">
+              <RouterLink to="/mikrotik" :class="[navigationMenuTriggerStyle(), 'bg-transparent hover:bg-sky-600 text-white-700 hover:text-slate-950']">
                 MikroTik
               </RouterLink>
             </NavigationMenuLink>
