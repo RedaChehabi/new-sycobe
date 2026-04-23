@@ -296,7 +296,7 @@
         </div>
         <RouterLink
           to="/contact"
-          class="flex-shrink-0 px-8 py-4 rounded-xl g-sky-600 text-white border border-white/30  font-bold hover:bg-sky-700 hover:text-slate-950 transition-colors text-lg"
+          class="flex-shrink-0 px-8 py-4 rounded-xl bg-cyan-400 text-white border border-white/30  font-bold hover:bg-cyan-300 transition-colors text-lg"
         >
           Contactez-nous →
         </RouterLink>
