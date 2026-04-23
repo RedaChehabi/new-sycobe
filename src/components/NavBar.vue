@@ -11,7 +11,7 @@
 
           <NavigationMenuItem>
             <NavigationMenuLink as-child>
-              <RouterLink to="/" :class="[navigationMenuTriggerStyle(), 'bg-transparent hover:bg-gray-50 text-white-700 hover:text-sky-600']">
+              <RouterLink to="/" :class="[navigationMenuTriggerStyle(), 'bg-transparent hover:bg-sky-700 text-white-700 hover:text-slate-950']">
                 Accueil
               </RouterLink>
             </NavigationMenuLink>
