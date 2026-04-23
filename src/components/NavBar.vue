@@ -65,7 +65,7 @@
           </NavigationMenuItem>
           <NavigationMenuItem class="ml-2">
             <NavigationMenuLink as-child>
-              <RouterLink to="/contact" class="inline-flex h-9 items-center justify-center rounded-md bg-sky-600 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-sky-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-sky-700">
+              <RouterLink to="/contact" class="inline-flex h-9 items-center justify-center rounded-md bg-sky-700 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-sky-600 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-sky-700">
                 Contact
               </RouterLink>
             </NavigationMenuLink>

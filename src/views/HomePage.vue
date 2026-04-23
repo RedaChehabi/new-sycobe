@@ -28,7 +28,7 @@
             </RouterLink>
             <RouterLink
               to="/about"
-              class="px-7 py-3.5 rounded-lg border border-slate-200 text-slate-600 font-semibold hover:border-sky-300 hover:text-sky-700 transition-colors"
+              class="px-7 py-3.5 rounded-lg border border-white/30 text-white font-semibold hover:bg-white/10 transition-colors"
             >
               En savoir plus
             </RouterLink>
@@ -296,7 +296,7 @@
         </div>
         <RouterLink
           to="/contact"
-          class="flex-shrink-0 px-8 py-4 rounded-xl bg-sky-700 text-white font-bold hover:bg-sky-600 transition-colors text-lg"
+          class="flex-shrink-0 px-8 py-4 rounded-xl g-cyan-400 text-slate-950 font-bold hover:bg-cyan-300 transition-colors text-lg"
         >
           Contactez-nous →
         </RouterLink>
