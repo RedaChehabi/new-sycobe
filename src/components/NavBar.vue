@@ -140,6 +140,14 @@
           Réalisation
         </RouterLink>
         
+        <RouterLink
+          to="/mikrotik"
+          @click="mobileOpen = false"
+          class="block px-3 py-3 text-sm font-medium text-gray-700 rounded-md hover:text-sky-600 hover:bg-gray-50 transition-colors"
+        >
+          MikroTik
+        </RouterLink>
+        
         <div class="mt-4 pt-4 border-t border-gray-100">
           <RouterLink
             to="/contact"
