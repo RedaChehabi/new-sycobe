@@ -9,8 +9,9 @@
           Expertise IT & Télécoms<br/>au cœur de la Mauritanie
         </h1>
         <p class="text-slate-500 text-lg leading-relaxed max-w-2xl">
-          SYCOBE accompagne entreprises et institutions dans leur transformation
-          numérique depuis plus de 20 ans — avec rigueur, compétence et ancrage local.
+          SYCOBE est une société spécialisée dans le domaine d'informatique & télécoms, la vente du matériel IT et les prestations d'IT,
+          et plus particulièrement l'infrastructure, O&M, les réseaux IP et le développement des solutions.
+          Nous assurons et effectuons les interventions dans des conditions très critiques pour garder le bon fonctionnement des équipements.
         </p>
         <div class="mt-6 h-px bg-slate-800 max-w-2xl"></div>
       </div>
@@ -28,12 +29,11 @@
 
       <div class="mb-16">
         <p class="text-slate-600 text-lg leading-relaxed">
-          Fondée le 27 novembre 2000 à Nouadhibou sous le nom SYCOBE, la société a bâti au fil des années
-          une solide réputation dans les domaines de l'informatique, des télécommunications, de la
-          maintenance et des services internet. Aujourd'hui basée à Nouakchott avec une représentation active
-          à Nouadhibou, SYCOBE opère à l'échelle nationale et s'appuie sur des partenariats internationaux
-          pour partager expertises et compétences. L'entreprise est dirigée par un expert IT agréé disposant de
-          plus de 15 ans d'expérience, entouré d'une équipe solide et pluridisciplinaire.
+          SYCOBE est une société du domaine TIC depuis 2001.
+          Le service de vente a été ajouté au domaine d'activités en 2016. 
+          Créée par un expert du domaine TIC avec une expérience de plus de 20 ans dans le secteur TIC et Télécoms, 
+          SYCOBE dispose d'un staff de 4 ingénieurs d'informatique. 
+          Siège social : Teyarett — Nouakchott (Route Corona). Un représentant à Nouadhibou.
         </p>
       </div>
 
@@ -75,39 +75,39 @@ export default {
   data() {
     return {
       stats: [
-        { value: '+20',  label: "ans d'expérience dans l'IT & Télécoms" },
-        { value: '+15',  label: "ans d'expertise du dirigeant certifié" },
-        { value: '2001', label: 'année de fondation officielle (SYCOBE)' },
+        { value: '2001', label: "Année de création" },
+        { value: '2016', label: "Ajout service de vente" },
+        { value: '4',    label: "Ingénieurs informatique" }
       ],
       domains: [
-        {
+      {
           icon: 'Monitor',
           bg: 'bg-blue-500/10',
           color: 'text-blue-400',
-          title: 'Développement & Systèmes',
-          desc: "Solutions logicielles sur mesure, bases de données, systèmes d'exploitation et intégration.",
+          title: 'Infrastructure & O&M',
+          desc: "Mise en place et maintenance des infrastructures IT et Télécoms. Interventions dans des conditions critiques pour garantir le bon fonctionnement des équipements.",
         },
         {
           icon: 'Wifi',
           bg: 'bg-cyan-500/10',
           color: 'text-cyan-400',
-          title: 'Réseaux & Infrastructures',
-          desc: "Mise en service et supervision d'infrastructures réseau, wifi, LAN/WAN et télécom.",
+          title: 'Réseaux IP & Data Centre',
+          desc: "Déploiement de réseaux IP, gestion de parcs Datacenter, réseaux IT et Télécoms.",
         },
         {
           icon: 'ShieldCheck',
           bg: 'bg-emerald-500/10',
           color: 'text-emerald-400',
-          title: 'Audit & Sécurité IT',
-          desc: "Audit de sécurité informatique, contrôle et conformité des systèmes d'information.",
+          title: 'Vente de Matériel IT',
+          desc: "Vente de matériel IT : routeurs, switches, BLR, points d'accès, serveurs, pilons, mâts, imprimantes, etc.",
         },
         {
           icon: 'Users',
           bg: 'bg-purple-500/10',
           color: 'text-purple-400',
-          title: 'Formation & Conseil',
-          desc: "Formations IT, transfert de compétences et accompagnement des équipes techniques.",
-        },
+          title: 'Développement de Solutions',
+          desc: "Développement d'applications pour opérateurs télécoms, écoles, facultés, cabinets médicaux, sociétés de manutention, pêche et transport.",
+        }
       ]
     }
   },

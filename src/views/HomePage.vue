@@ -14,7 +14,7 @@
           </h1>
 
           <p class="text-blue-100 text-lg leading-relaxed mb-10 max-w-xl">
-            Depuis 2001, SYCOBE développe une expertise solide dans les domaines
+            Depuis 2001, SYCOBE Sarl développe une expertise solide dans les domaines
             de l'informatique et des télécommunications au service des entreprises
             et institutions de Mauritanie.
           </p>

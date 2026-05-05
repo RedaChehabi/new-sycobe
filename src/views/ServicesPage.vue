@@ -117,14 +117,14 @@ export default {
           iconBg: 'bg-blue-50',
           checkBg: 'bg-blue-100',
           checkColor: 'text-blue-600',
-          desc: "Étude, câblage, Wifi, ADSL, routeurs, firewall, VPN et sécurité. SYCOBE conçoit et déploie des infrastructures réseau robustes pour les entreprises et institutions.",
+          desc: "Mise en place des réseaux IP et vente de matériel IT : routeurs, switches, BLR, points d'accès, serveurs, pilons, mâts et imprimantes.",
           bullets: [
-            'Étude & conception LAN/WAN',
-            'Câblage structuré & Wifi',
-            'Routeurs & switches',
-            'Firewall, VPN & sécurité',
-            'Audit informatique',
-          ],
+            "Réseaux IP & Data Centre",
+            "Routeurs & switches",
+            "BLR & points d'accès",
+            "Firewall & VPN",
+            "Audit informatique"
+          ]
         },
         {
           slug: 'formations',
@@ -155,14 +155,14 @@ export default {
           iconBg: 'bg-purple-50',
           checkBg: 'bg-purple-100',
           checkColor: 'text-purple-600',
-          desc: "SYCOBE développe des applications métier sur mesure, des sites web et des systèmes de gestion via J2EE, MySQL, Oracle, PHP et Visual Basic.",
+          desc: "Développement d'applications pour opérateurs télécoms, écoles, facultés, cabinets médicaux, sociétés de manutention, pêche et transport. Systèmes de facturation et solution GED.",
           bullets: [
-            'Applications web J2EE & PHP',
-            'Bases de données MySQL & Oracle',
-            'Solutions Visual Basic',
-            'Systèmes de gestion métier',
-            'Intégration & API',
-          ],
+            "Applications métier sur mesure",
+            "Systèmes de facturation SMS",
+            "Solution GED",
+            "J2EE, PHP, MySQL, Oracle",
+            "Maintenance & évolution",
+          ]
         },
       ],
     }

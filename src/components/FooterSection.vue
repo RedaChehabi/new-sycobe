@@ -9,7 +9,7 @@
             <img src="/logo.png" alt="SYCOBE" class="h-12 w-auto mb-4" />
           </RouterLink>
           <p class="text-slate-400 text-sm leading-relaxed max-w-xs">
-            Informatique & Télécommunications depuis 2001.
+            Société du domaine TIC depuis 2001. Siège : Teyarett, Nouakchott.
           </p>
         </div>
 
@@ -86,7 +86,7 @@
         </a>
 
         <p class="text-slate-500 text-sm">
-          © {{ currentYear }} SYCOBE. Tous droits réservés.
+          © {{ currentYear }} SYCOBE Sarl. Tous droits réservés.
         </p>
 
       </div>
