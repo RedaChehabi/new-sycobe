@@ -288,6 +288,85 @@
       </div>
     </section>
 
+    <section class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <div class="mb-20">
+          <h2 class="text-3xl font-black text-slate-900 text-center mb-12">
+            Ils nous font <span class="text-sky-600">confiance</span>
+          </h2>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4 mb-8">
+            <div
+              v-for="client in currentClients"
+              :key="client.name"
+              class="flex items-center justify-center px-4 py-6 rounded-xl border border-slate-100 bg-white shadow-sm hover:border-sky-200 hover:shadow-md transition-all duration-200"
+            >
+              <span class="text-slate-700 font-bold text-xs text-center leading-snug">{{ client.name }}</span>
+            </div>
+          </div>
+
+          <div class="flex justify-center items-center gap-2 mb-8">
+            <button
+              v-for="(_, i) in clientPages"
+              :key="i"
+              @click="currentClientPage = i"
+              :class="[
+                'rounded-full transition-all duration-200',
+                currentClientPage === i
+                  ? 'w-6 h-2.5 bg-sky-500'
+                  : 'w-2.5 h-2.5 bg-slate-200 hover:bg-slate-300'
+              ]"
+            ></button>
+          </div>
+
+          <div class="text-center">
+            <RouterLink
+              to="/partenaires"
+              class="inline-flex items-center gap-2 text-sky-600 text-sm font-semibold hover:underline"
+            >
+              Voir toutes nos références
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+              </svg>
+            </RouterLink>
+          </div>
+        </div>
+
+        <div class="border-t border-slate-100 mb-20"></div>
+
+        <div>
+          <h2 class="text-3xl font-black text-slate-900 text-center mb-12">
+            Nos <span class="text-sky-600">Partenaires</span>
+          </h2>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+            <div
+              v-for="partner in partners.slice(0, 6)"
+              :key="partner.name"
+              class="flex flex-col items-center justify-center px-4 py-6 rounded-xl border border-slate-100 bg-white shadow-sm hover:border-sky-200 hover:shadow-md transition-all duration-200"
+            >
+              <span class="text-slate-800 font-bold text-xs text-center">{{ partner.name }}</span>
+              <span class="text-sky-500 text-xs mt-1 text-center">{{ partner.domain }}</span>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <RouterLink
+              to="/partenaires"
+              class="inline-flex items-center gap-2 text-sky-600 text-sm font-semibold hover:underline"
+            >
+              Voir tous nos partenaires
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+              </svg>
+            </RouterLink>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <section class="bg-sky-800 py-24">
       <div class="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-center justify-between gap-8">
         <div>
@@ -309,8 +388,22 @@
 <script>
 export default {
   name: 'HomePage',
+  computed: {
+    clientPages() {
+      const pages = []
+      for (let i = 0; i < this.clients.length; i += this.clientsPerPage) {
+        pages.push(this.clients.slice(i, i + this.clientsPerPage))
+      }
+      return pages
+    },
+    currentClients() {
+      return this.clientPages[this.currentClientPage] || []
+    },
+  },
   data() {
     return {
+      currentClientPage: 0,
+      clientsPerPage: 7,
       activeService: 0,
       activeProduct: 0,
       activeProject: 0,
@@ -424,6 +517,48 @@ export default {
           name: 'SAHARA SCOLAR',
         },
       ],
+      clients: [
+        { name: 'Mauritel' },
+        { name: 'Chinguitel' },
+        { name: 'Mattel' },
+        { name: 'ARE' },
+        { name: 'CNAM' },
+        { name: 'SNIM' },
+        { name: 'Faculté de Médecine' },
+        { name: 'Faculté des Sciences et Techniques' },
+        { name: 'INSP' },
+        { name: "Hotel T'Feila" },
+        { name: 'GOLDLAND' },
+        { name: 'SMAGEC' },
+        { name: 'SOMIR' },
+        { name: 'EAZITEL' },
+        { name: 'TADAMOUN TELECOM' },
+        { name: 'COMMECA' },
+        { name: 'CSS' },
+        { name: 'CSA Bassiknou' },
+        { name: 'OPM' },
+        { name: 'ONSER' },
+        { name: 'RIDHA FREE ZONE' },
+      ],
+      partners: [
+        { name: 'MikroTik',         domain: 'Équipements Wireless' },
+        { name: 'Teltonika',        domain: 'Équipements Wireless' },
+        { name: 'LigoWave',         domain: 'Équipements Wireless' },
+        { name: 'INOCOD',           domain: 'Développement' },
+        { name: 'SSC',              domain: 'Audit SI' },
+        { name: 'Zimbra',           domain: 'Messagerie' },
+        { name: 'Trusted Advisors', domain: 'Formation' },
+        { name: 'ITS',              domain: 'Infrastructure' },
+        { name: 'Fraudbuster',      domain: 'Sécurité' },
+        { name: 'LATRO',            domain: 'Sécurité' },
+        { name: 'mCarbon',          domain: 'VAS' },
+        { name: 'U2opia',           domain: 'VAS' },
+        { name: 'INOVAR',           domain: 'VAS' },
+        { name: 'ControlCall',      domain: 'VAS' },
+        { name: 'ESTEL-TELECOMS',   domain: 'Recharge Électronique' },
+        { name: 'Mazma',            domain: 'E-Recharge' },
+        { name: 'JazNetwork',       domain: 'Facturation FAI' },
+      ],
     }
   },
 }
@@ -441,5 +576,18 @@ export default {
 .fade-up-leave-to {
   opacity: 0;
   transform: translateY(-8px);
+}
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+  width: max-content;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
 }
 </style>

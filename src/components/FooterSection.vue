@@ -128,6 +128,8 @@ export default {
           { label: 'Services',  to: '/services' },
           { label: 'Projets',       to: '/projects' },
           { label: 'Contact',       to: '/contact' },
+          { label: 'Partenaires',  to: '/partenaires' },
+          { label: 'Références',  to: '/references' },
         ],
       }
     }

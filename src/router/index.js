@@ -38,6 +38,18 @@ const routes = [
         meta: { title: 'Contact – SYCOBE' }
     },
     {
+        path: '/partenaires',
+        name: 'Partenaires',
+        component: () => import('../views/PartnairePage.vue'),
+        meta: { title: 'Partenaires – SYCOBE' }
+    },
+    {
+        path: '/references',
+        name: 'References',
+        component: () => import('../views/ReferencePage.vue'),
+        meta: { title: 'References – SYCOBE' }
+    },
+    {
         path: '/mikrotik',
         name: 'Mikrotik',
         component: () => import('../views/MicrotikPage.vue'),

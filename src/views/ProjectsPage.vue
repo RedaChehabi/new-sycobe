@@ -61,6 +61,34 @@ export default {
           icon: '/projects/SaharaScolar.png',
           name: 'SAHARA SCOLAR',
         },
+        {
+          icon: '/no_image.jpg',
+          name: 'SAHARA-CRM',
+        },
+        {
+          icon: '/no_image.jpg',
+          name: 'SAHARA-INSCRIPTION-ONLINE',
+        },
+        {
+          icon: '/no_image.jpg',
+          name: 'SAHARA-GED',
+        },
+        {
+          icon: '/no_image.jpg',
+          name: 'SAHARA-MANUTENTION',
+        },
+        {
+          icon: '/no_image.jpg',
+          name: 'SAHARA-MONEY',
+        },
+        {
+          icon: '/no_image.jpg',
+          name: 'SAHARA-TRANSPORT',
+        },
+        {
+          icon: '/no_image.jpg',
+          name: 'AMC/ REMARK ',
+        }
       ],
     }
   },

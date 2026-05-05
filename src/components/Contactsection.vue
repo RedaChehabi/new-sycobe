@@ -134,7 +134,7 @@ export default {
       sending: false,
       form: { company: '', email: '', subject: '', message: '' },
       contactInfo: [
-        { icon: '📍', label: 'Adresse', value: 'Nouakchott, Mauritanie' },
+        { icon: '📍', label: 'Adresse', value: 'Teyarett-Nouakchott, Mauritanie' },
         { icon: '✉️', label: 'Email',   value: 'info@sycobe.mr' },
         { icon: '📞', label: 'Tél',     value: '+222 36 31 14 77' },
       ],
