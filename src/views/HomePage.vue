@@ -302,7 +302,12 @@
               :key="client.name"
               class="flex items-center justify-center px-4 py-6 rounded-xl border border-slate-100 bg-white shadow-sm hover:border-sky-200 hover:shadow-md transition-all duration-200"
             >
-              <span class="text-slate-700 font-bold text-xs text-center leading-snug">{{ client.name }}</span>
+              <img
+                v-if="client.logo"
+                :src="client.logo"
+                :alt="client.name"
+                class="h-10 w-auto object-contain"
+              />
             </div>
           </div>
 
@@ -322,7 +327,7 @@
 
           <div class="text-center">
             <RouterLink
-              to="/partenaires"
+              to="/references"
               class="inline-flex items-center gap-2 text-sky-600 text-sm font-semibold hover:underline"
             >
               Voir toutes nos références
@@ -346,8 +351,13 @@
               :key="partner.name"
               class="flex flex-col items-center justify-center px-4 py-6 rounded-xl border border-slate-100 bg-white shadow-sm hover:border-sky-200 hover:shadow-md transition-all duration-200"
             >
+              <img
+                v-if="partner.logo"
+                :src="partner.logo"
+                :alt="partner.name"
+                class="h-10 w-auto object-contain"
+              />
               <span class="text-slate-800 font-bold text-xs text-center">{{ partner.name }}</span>
-              <span class="text-sky-500 text-xs mt-1 text-center">{{ partner.domain }}</span>
             </div>
           </div>
 
@@ -518,46 +528,29 @@ export default {
         },
       ],
       clients: [
-        { name: 'Mauritel' },
-        { name: 'Chinguitel' },
-        { name: 'Mattel' },
-        { name: 'ARE' },
-        { name: 'CNAM' },
-        { name: 'SNIM' },
-        { name: 'Faculté de Médecine' },
-        { name: 'Faculté des Sciences et Techniques' },
-        { name: 'INSP' },
-        { name: "Hotel T'Feila" },
-        { name: 'GOLDLAND' },
-        { name: 'SMAGEC' },
-        { name: 'SOMIR' },
-        { name: 'EAZITEL' },
-        { name: 'TADAMOUN TELECOM' },
-        { name: 'COMMECA' },
-        { name: 'CSS' },
-        { name: 'CSA Bassiknou' },
-        { name: 'OPM' },
-        { name: 'ONSER' },
-        { name: 'RIDHA FREE ZONE' },
+        { name: 'Mauritel' , logo: '/logos/clients/mauritel.png' },
+        { name: 'Chinguitel' , logo: '/logos/clients/Chinguitel.png' },
+        { name: 'Mattel' , logo: '/logos/clients/mattel.jpg' },
+        { name: 'ARE' , logo: '/logos/clients/are.jpg' },
+        { name: 'CNAM' , logo: '/logos/clients/cnam.jpg' },
+        { name: 'SNIM' , logo: '/logos/clients/snim.jpg' },
+        { name: 'Faculté de Médecine' , logo: '/logos/clients/UNA.png' },
+        { name: 'Faculté des Sciences et Techniques' , logo: '/logos/clients/UNA.png' },
+        { name: 'INSP' , logo: '/logos/clients/INSP.jpg' },
+        { name: 'SOMIR' , logo: '/logos/clients/somir.png' },
+        { name: 'COMMECA' , logo: '/logos/clients/comeca.png' },
+        { name: 'CSS' , logo: '/logos/clients/CSS.png' },
+        { name: 'CSA Bassiknou' , logo: '/logos/clients/CSA.jpg' },
+        { name: 'OPM' , logo: '/logos/clients/OPM.jpg' },
+        { name: 'ONSER' , logo: '/logos/clients/onser.jpg' },
       ],
       partners: [
-        { name: 'MikroTik',         domain: 'Équipements Wireless' },
-        { name: 'Teltonika',        domain: 'Équipements Wireless' },
-        { name: 'LigoWave',         domain: 'Équipements Wireless' },
-        { name: 'INOCOD',           domain: 'Développement' },
-        { name: 'SSC',              domain: 'Audit SI' },
-        { name: 'Zimbra',           domain: 'Messagerie' },
-        { name: 'Trusted Advisors', domain: 'Formation' },
-        { name: 'ITS',              domain: 'Infrastructure' },
-        { name: 'Fraudbuster',      domain: 'Sécurité' },
-        { name: 'LATRO',            domain: 'Sécurité' },
-        { name: 'mCarbon',          domain: 'VAS' },
-        { name: 'U2opia',           domain: 'VAS' },
-        { name: 'INOVAR',           domain: 'VAS' },
-        { name: 'ControlCall',      domain: 'VAS' },
-        { name: 'ESTEL-TELECOMS',   domain: 'Recharge Électronique' },
-        { name: 'Mazma',            domain: 'E-Recharge' },
-        { name: 'JazNetwork',       domain: 'Facturation FAI' },
+        { name: 'MikroTik', logo :'/logos/partenaires/Mikrotik.png'},
+        { name: 'Teltonika', logo :'/logos/partenaires/TELTONIKA.png'},
+        { name: 'LigoWave', logo :'/logos/partenaires/ligowave.png'},
+        { name: 'INOCOD', logo :'/logos/partenaires/inocod.png' },
+        { name: 'Zimbra', logo :'/logos/partenaires/Zimbra.png'},
+        { name: 'ControlCall', logo :'/logos/partenaires/ControlCall.png'},
       ],
     }
   },

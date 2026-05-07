@@ -17,10 +17,27 @@
             <div
               v-for="partner in partners"
               :key="partner.name"
-              class="bg-white border border-slate-100 rounded-2xl p-5 shadow-sm hover:border-sky-200 hover:shadow-md transition-all duration-200"
+              class="bg-white border border-slate-100 rounded-2xl shadow-sm hover:border-sky-200 hover:shadow-md transition-all duration-200 flex items-center gap-4 p-5"
             >
-              <p class="text-slate-900 font-bold text-sm">{{ partner.name }}</p>
-              <p class="text-sky-600 text-xs mt-1">{{ partner.domain }}</p>
+              <div class="w-16 h-12 flex-shrink-0 flex items-center justify-center">
+                <img
+                  v-if="partner.logo"
+                  :src="partner.logo"
+                  :alt="partner.name"
+                  class="max-h-10 max-w-[60px] object-contain"
+                />
+                <div
+                  v-else
+                  class="w-12 h-12 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center flex-shrink-0"
+                >
+                  <span class="text-sky-600 font-black text-sm">{{ partner.name.charAt(0) }}</span>
+                </div>
+              </div>
+
+              <div>
+                <p class="text-slate-900 font-bold text-sm">{{ partner.name }}</p>
+                <p class="text-sky-600 text-xs mt-0.5">{{ partner.domain }}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -39,24 +56,24 @@
     data() {
       return {
         partners: [
-          { name: 'INOCOD',            domain: 'Développement & Programmation' },
-          { name: 'SSC',               domain: 'Audit Système d\'Information' },
-          { name: 'MikroTik',          domain: 'Équipements Wireless' },
-          { name: 'Teltonika',         domain: 'Équipements Wireless' },
-          { name: 'LigoWave',          domain: 'Équipements Wireless' },
-          { name: 'mCarbon',           domain: 'VAS' },
-          { name: 'U2opia',            domain: 'VAS' },
-          { name: 'ITS',               domain: 'Infrastructures & Serveurs' },
-          { name: 'INOVAR',            domain: 'VAS' },
-          { name: 'Trusted Advisors',  domain: 'Formation' },
-          { name: 'ControlCall',       domain: 'VAS' },
-          { name: 'ESTEL-TELECOMS',    domain: 'Recharge Électronique' },
-          { name: 'Mazma',             domain: 'E-Recharge' },
-          { name: 'NEW TIC MALI',      domain: 'Network' },
+          { name: 'INOCOD',            domain: 'Développement & Programmation' , logo :'/logos/partenaires/inocod.png' },
+          { name: 'SSC',               domain: 'Audit Système d\'Information' , logo :'/logos/partenaires/SSC.png' },
+          { name: 'MikroTik',          domain: 'Équipements Wireless' , logo :'/logos/partenaires/Mikrotik.png'},
+          { name: 'Teltonika',         domain: 'Équipements Wireless' , logo :'/logos/partenaires/TELTONIKA.png'},
+          { name: 'LigoWave',          domain: 'Équipements Wireless' , logo :'/logos/partenaires/ligowave.png'},
+          { name: 'mCarbon',           domain: 'VAS' , logo :'/logos/partenaires/M-Carbon.png'},
+          { name: 'U2opia',            domain: 'VAS' , logo :'/logos/partenaires/u2opia.png'},
+          { name: 'ITS',               domain: 'Infrastructures & Serveurs' , logo :'/logos/partenaires/ITS.png'},
+          { name: 'INOVAR',            domain: 'VAS' , logo :'/logos/partenaires/inovar.png'},
+          { name: 'Trusted Advisors',  domain: 'Formation' , logo :'/logos/partenaires/Trusted_Advisors.png'},
+          { name: 'ControlCall',       domain: 'VAS' , logo :'/logos/partenaires/ControlCall.png'},
+          { name: 'ESTEL-TELECOMS',    domain: 'Recharge Électronique' , logo :'/logos/partenaires/Estel.png'},
+          { name: 'Mazma',             domain: 'E-Recharge' , logo :'/logos/partenaires/mamza.png'},
+          { name: 'NEW TIC MALI',      domain: 'Network' , logo :'/logos/partenaires/NEW_TIC_MALI.jpg'},
           { name: 'JazNetwork',        domain: 'Facturation FAI' },
-          { name: 'Fraudbuster',       domain: 'OTT Fraude' },
-          { name: 'LATRO',             domain: 'SIMBOX Fraude' },
-          { name: 'Zimbra',            domain: 'Messagerie Électronique' },
+          { name: 'Fraudbuster',       domain: 'OTT Fraude' , logo :'/logos/partenaires/FraudBuster.png'},
+          { name: 'LATRO',             domain: 'SIMBOX Fraude' , logo :'/logos/partenaires/LATRO.png'},
+          { name: 'Zimbra',            domain: 'Messagerie Électronique' , logo :'/logos/partenaires/Zimbra.png'},
         ],
       }
     },

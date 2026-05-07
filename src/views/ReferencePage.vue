@@ -17,10 +17,27 @@
             <div
               v-for="client in clients"
               :key="client.name"
-              class="bg-white border border-slate-100 rounded-2xl p-5 shadow-sm hover:border-sky-200 transition-all duration-200"
+              class="bg-white border border-slate-100 rounded-2xl shadow-sm hover:border-sky-200 transition-all duration-200 flex items-center gap-4 p-5"
             >
-              <p class="text-slate-900 font-bold text-sm">{{ client.name }}</p>
-              <p class="text-slate-400 text-xs mt-1">{{ client.sector }}</p>
+              <div class="w-16 h-12 flex-shrink-0 flex items-center justify-center">
+                <img
+                  v-if="client.logo"
+                  :src="client.logo"
+                  :alt="client.name"
+                  class="max-h-10 max-w-[60px] object-contain"
+                />
+                <div
+                  v-else
+                  class="w-12 h-12 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center flex-shrink-0"
+                >
+                  <span class="text-slate-500 font-black text-sm">{{ client.name.charAt(0) }}</span>
+                </div>
+              </div>
+
+              <div>
+                <p class="text-slate-900 font-bold text-sm">{{ client.name }}</p>
+                <p class="text-slate-400 text-xs mt-0.5">{{ client.sector }}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -39,31 +56,31 @@
     data() {
       return {
         clients: [
-          { name: 'Faculté de Médecine',      sector: 'Enseignement supérieur' },
-          { name: 'Faculté des Sciences et Techniques', sector: 'Enseignement supérieur' },
-          { name: 'Mauritel',                 sector: 'Télécom' },
-          { name: 'Chinguitel',               sector: 'Télécom' },
-          { name: 'Mattel',                   sector: 'Télécom' },
-          { name: 'ARE',                      sector: 'Régulation' },
-          { name: 'CNAM',                     sector: 'Sécurité sociale' },
-          { name: 'SNIM',                     sector: 'Industrie minière' },
-          { name: 'SMAGEC',                   sector: 'Gestion' },
-          { name: 'SOMIR',                    sector: 'Industrie' },
-          { name: 'INSP',                     sector: 'Santé publique' },
-          { name: 'ONSER',                    sector: 'Services' },
-          { name: 'OPM',                      sector: 'Services' },
-          { name: 'MCP',                      sector: 'Services' },
-          { name: 'SETP',                     sector: 'Services' },
-          { name: 'TADAMOUN TELECOM',         sector: 'Télécom' },
-          { name: 'EAZITEL - GIBRALTAR',      sector: 'Télécom' },
-          { name: 'GOLDLAND',                 sector: 'Commerce' },
-          { name: 'COMMECA',                  sector: 'Commerce' },
+          { name: 'Faculté de Médecine',      sector: 'Enseignement supérieur' , logo: '/logos/clients/UNA.png' },
+          { name: 'Faculté des Sciences et Techniques', sector: 'Enseignement supérieur' , logo: '/logos/clients/UNA.png' },
+          { name: 'Mauritel',                 sector: 'Télécom' , logo: '/logos/clients/mauritel.png' },
+          { name: 'Chinguitel',               sector: 'Télécom' , logo: '/logos/clients/Chinguitel.png' },
+          { name: 'Mattel',                   sector: 'Télécom' , logo: '/logos/clients/mattel.jpg' },
+          { name: 'ARE',                      sector: 'Régulation' , logo: '/logos/clients/are.jpg' },
+          { name: 'CNAM',                     sector: 'Sécurité sociale' , logo: '/logos/clients/cnam.jpg' },
+          { name: 'SNIM',                     sector: 'Industrie minière' , logo: '/logos/clients/snim.jpg' },
+          { name: 'SMAGEC',                   sector: 'Gestion'  , logo:'/logos/clients/Smagec.png'},
+          { name: 'SOMIR',                    sector: 'Industrie' , logo: '/logos/clients/somir.png' },
+          { name: 'INSP',                     sector: 'Santé publique' , logo: '/logos/clients/INSP.jpg' },
+          { name: 'ONSER',                    sector: 'Services' , logo: '/logos/clients/onser.jpg' },
+          { name: 'OPM',                      sector: 'Services' , logo: '/logos/clients/OPM.jpg' },
+          { name: 'MCP',                      sector: 'Services'  },
+          { name: 'SETP',                     sector: 'Services' , logo: '/logos/clients/SEPT.png' },
+          { name: 'TADAMOUN TELECOM',         sector: 'Télécom'  , logo :'/logos/clients/TADAMOUN_TELECOM.jpg'},
+          { name: 'EAZITEL - GIBRALTAR',      sector: 'Télécom'  },
+          { name: 'GOLDLAND',                 sector: 'Commerce'  },
+          { name: 'COMMECA',                  sector: 'Commerce' , logo: '/logos/clients/comeca.png' },
           { name: 'RIDHA FREE ZONE',          sector: 'Zone franche' },
-          { name: 'Hotel T\'Feila',           sector: 'Hôtellerie' },
-          { name: 'CSS',                      sector: 'Services' },
-          { name: 'CSA Bassiknou',            sector: 'Santé' },
-          { name: 'Écoles Privées',           sector: 'Éducation' },
-          { name: 'Cabinets Médicaux',        sector: 'Santé' },
+          { name: 'Hotel T\'Feila',           sector: 'Hôtellerie'  },
+          { name: 'CSS',                      sector: 'Services' , logo: '/logos/clients/CSS.png' },
+          { name: 'CSA Bassiknou',            sector: 'Santé' , logo: '/logos/clients/CSA.jpg' },
+          { name: 'Écoles Privées',           sector: 'Éducation'  },
+          { name: 'Cabinets Médicaux',        sector: 'Santé'  },
         ],
       }
     },
