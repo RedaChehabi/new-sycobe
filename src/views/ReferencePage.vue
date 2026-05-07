@@ -69,7 +69,7 @@
           { name: 'INSP',                     sector: 'Santé publique' , logo: '/logos/clients/INSP.jpg' },
           { name: 'ONSER',                    sector: 'Services' , logo: '/logos/clients/onser.jpg' },
           { name: 'OPM',                      sector: 'Services' , logo: '/logos/clients/OPM.jpg' },
-          { name: 'MCP',                      sector: 'Services'  },
+          { name: 'MCP',                      sector: 'Services' , logo: '/logos/clients/MCP.png'  },
           { name: 'SETP',                     sector: 'Services' , logo: '/logos/clients/SEPT.png' },
           { name: 'TADAMOUN TELECOM',         sector: 'Télécom'  , logo :'/logos/clients/TADAMOUN_TELECOM.jpg'},
           { name: 'EAZITEL - GIBRALTAR',      sector: 'Télécom'  },
