@@ -65,7 +65,7 @@
           { name: 'CNAM',                     sector: 'Sécurité sociale' , logo: '/logos/clients/cnam.jpg' },
           { name: 'SNIM',                     sector: 'Industrie minière' , logo: '/logos/clients/snim.jpg' },
           { name: 'SMAGEC',                   sector: 'Gestion'  , logo:'/logos/clients/SMAGEC.png'},
-          { name: 'SOMIR',                    sector: 'Industrie' , logo: '/logos/clients/SOMIR.png' },
+          { name: 'SOMIR',                    sector: 'Industrie' , logo: '/logos/clients/somir.png' },
           { name: 'INSP',                     sector: 'Santé publique' , logo: '/logos/clients/INSP.jpg' },
           { name: 'ONSER',                    sector: 'Services' , logo: '/logos/clients/onser.jpg' },
           { name: 'OPM',                      sector: 'Services' , logo: '/logos/clients/OPM.jpg' },

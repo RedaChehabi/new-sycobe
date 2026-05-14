@@ -536,7 +536,7 @@ export default {
         { name: 'Faculté de Médecine' , logo: '/logos/clients/UNA.png' },
         { name: 'Faculté des Sciences et Techniques' , logo: '/logos/clients/UNA.png' },
         { name: 'INSP' , logo: '/logos/clients/INSP.jpg' },
-        { name: 'SOMIR' , logo: '/logos/clients/SOMIR.png' },
+        { name: 'SOMIR' , logo: '/logos/clients/somir.png' },
         { name: 'COMMECA' , logo: '/logos/clients/comeca.png' },
         { name: 'CSS' , logo: '/logos/clients/CSS.png' },
         { name: 'CSA Bassiknou' , logo: '/logos/clients/CSA.jpg' },
