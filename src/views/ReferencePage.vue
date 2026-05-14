@@ -82,6 +82,7 @@
           //{ name: 'Écoles Privées',           sector: 'Éducation'  },
           //{ name: 'Cabinets Médicaux',        sector: 'Santé'  },
           { name: 'ENSSS',        sector: 'Enseignement supérieur ' , logo: '/logos/clients/ENSSS.webp' },
+          { name: 'Port Autonome de Nouadhibou (PAN)',        sector: 'transports maritimes et de la logistique ' , logo: '/logos/clients/PAN.png' },
         ],
       }
     },

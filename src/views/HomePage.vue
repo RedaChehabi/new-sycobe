@@ -542,6 +542,7 @@ export default {
         { name: 'CSA Bassiknou' , logo: '/logos/clients/CSA.jpg' },
         { name: 'OPM' , logo: '/logos/clients/OPM.jpg' },
         { name: 'ONSER' , logo: '/logos/clients/onser.jpg' },
+        { name: 'PAN' , logo: '/logos/clients/PAN.png' },
       ],
       partners: [
         { name: 'MikroTik', logo :'/logos/partenaires/Mikrotik.png'},
