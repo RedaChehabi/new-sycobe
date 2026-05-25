@@ -20,40 +20,6 @@ Refonte moderne du site [sycobe.mr](http://sycobe.mr) — société mauritanienn
 
 ---
 
-## Structure du projet
-
-src/
-├── components/ # Composants réutilisables
-│ ├── ui/ # Composants shadcn-vue
-│ ├── NavBar.vue
-│ ├── FooterSection.vue
-│ └── ContactSection.vue
-├── views/ # Pages (une par route)
-│ ├── HomePage.vue
-│ ├── AboutPage.vue
-│ ├── ServicesPage.vue
-│ ├── ServiceDetailPage.vue
-│ ├── ProjectsPage.vue
-│ ├── PartnersPage.vue
-│ ├── MikroTikPage.vue
-│ ├── ProductDetailPage.vue
-│ ├── ContactPage.vue
-│ └── NotFoundPage.vue
-├── router/
-│ └── index.js # Routes & navigation
-├── lib/
-│ └── utils.js # Utilitaires (cn helper)
-├── App.vue
-└── main.js
-public/
-├── logo.png
-├── produits/ # Images produits MikroTik
-├── services/ # Images services
-├── projects/ # Images projets
-└── logos/ # Logos partenaires & clients
-
----
-
 ## Pages
 
 | Route             | Page                                                    |
