@@ -419,7 +419,7 @@ export default {
       services: [
         {
           title: 'Réseau Télécom',
-          image: '/service/reseau-telecom.jpg',
+          image: '/service/reseau-telecom.webp',
           iconBg: 'bg-cyan-50',
           badgeBg: 'bg-cyan-50',
           badgeText: 'text-cyan-700',
@@ -435,7 +435,7 @@ export default {
         },
         {
           title: 'Réseau Informatique',
-          image: '/service/reseau-informatique.jpg',
+          image: '/service/reseau-informatique.webp',
           iconBg: 'bg-blue-50',
           badgeBg: 'bg-blue-50',
           badgeText: 'text-blue-700',
@@ -451,7 +451,7 @@ export default {
         },
         {
           title: 'Formations',
-          image: '/service/Formation.jpg',
+          image: '/service/Formation.webp',
           iconBg: 'bg-green-50',
           badgeBg: 'bg-green-50',
           badgeText: 'text-green-700',
@@ -467,7 +467,7 @@ export default {
         },
         {
           title: 'Développement',
-          image: '/service/developpement.jpg',
+          image: '/service/developpement.webp',
           iconBg: 'bg-purple-50',
           badgeBg: 'bg-purple-50',
           badgeText: 'text-purple-700',
