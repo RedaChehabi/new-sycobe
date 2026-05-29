@@ -57,25 +57,25 @@ export default {
       products: [
         {
           slug: 'cloud-core-router',
-          image: '/produits/CCR1016-12G/1.png',
+          image: '/produits/CCR1016-12G/1.webp',
           titre: 'Cloud Core Router',
           desc: "1U rackmount, 12x Gigabit Ethernet, LCD, 16 cores x 1.2GHz CPU, 2GB RAM, 17.8mpps fastpath, Up to 12Gbit/s throughput, RouterOS L6, Dual PSU",
         },
         {
           slug: 'routerboard-rb951ui-2hnd',
-          image: '/produits/RB951Ui-2HnD/1.png',
+          image: '/produits/RB951Ui-2HnD/1.webp',
           titre: 'Routerboard RB951UI-2HND',
           desc: "2.4GHz AP with five Ethernet ports and PoE output on port 5. It has a 600MHz CPU, 128MB RAM and a USB port.",
         },
         {
           slug: 'routerboard-sxt-5ndr2-lite5',
-          image: '/produits/SXT-Lite5/1.png',
+          image: '/produits/SXT-Lite5/1.webp',
           titre: 'Routerboard SXT-5NDR2 LITE5',
           desc: "16dBi integrated CPE/Backbone, 5GHz dual chain, 600MHz CPU",
         },
         {
           slug: 'routerboard-rb2011uias-rm',
-          image: '/produits/RB2011UiAS-RM/1.png',
+          image: '/produits/RB2011UiAS-RM/1.webp',
           titre: 'Routerboard RB2011UIAS-RM',
           desc: "1U rackmount, 5xEthernet, 5xGigabit Ethernet, USB, LCD, PoE out on port 10, 600MHz CPU, 128MB RAM, RouterOS L5",
         },

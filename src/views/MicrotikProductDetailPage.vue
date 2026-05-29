@@ -106,8 +106,8 @@ const ALL_PRODUCTS = [
   {
     slug: 'cloud-core-router',
     image: [
-      '/produits/CCR1016-12G/1.png',
-      '/produits/CCR1016-12G/2.png'
+      '/produits/CCR1016-12G/1.webp',
+      '/produits/CCR1016-12G/2.webp'
     ],
     titre: 'Cloud Core Router',
     desc: "Le CCR1016-12G est un routeur de qualité industrielle conçu pour les environnements exigeant un débit extrêmement élevé. Équipé d'un processeur Tilera 16 cœurs et de 12 ports Gigabit Ethernet, il est capable de traiter des millions de paquets par seconde. Idéal pour les FAI, les grandes entreprises et les opérateurs télécom qui ont besoin d'un routage performant et fiable. La nouvelle version r2 intègre 2 Go de RAM, un port USB standard et une double alimentation pour une redondance accrue.",
@@ -128,7 +128,7 @@ const ALL_PRODUCTS = [
   {
     slug: 'routerboard-rb951ui-2hnd',
     image: [
-      '/produits/RB951Ui-2HnD/1.png'
+      '/produits/RB951Ui-2HnD/1.webp'
     ],
     titre: 'Routerboard RB951UI-2HND',
     desc: "Le RB951Ui-2HnD est un point d'accès sans fil SOHO polyvalent, idéal pour les petits bureaux et les déploiements réseau simples. Il est équipé d'un processeur Atheros de nouvelle génération offrant une puissance de traitement accrue par rapport aux modèles précédents. Il dispose de cinq ports Ethernet, d'un port USB 2.0 pour le partage de périphériques, et d'un point d'accès WiFi 2,4 GHz haute puissance avec antennes intégrées. Le port n°5 est équipé d'une fonction PoE permettant d'alimenter d'autres appareils compatibles avec la même tension que celle appliquée au routeur.",
@@ -149,10 +149,10 @@ const ALL_PRODUCTS = [
   {
     slug: 'routerboard-sxt-5ndr2-lite5',
     image: [
-      '/produits/SXT-Lite5/1.png',
-      '/produits/SXT-Lite5/2.png',
-      '/produits/SXT-Lite5/3.png',
-      '/produits/SXT-Lite5/4.png'
+      '/produits/SXT-Lite5/1.webp',
+      '/produits/SXT-Lite5/2.webp',
+      '/produits/SXT-Lite5/3.webp',
+      '/produits/SXT-Lite5/4.webp'
     ],
     titre: 'Routerboard SXT-5NDR2 LITE5',
     desc: "Le SXT Lite5 est un équipement sans fil extérieur 5 GHz compact, économique et haute puissance. Il est conçu pour les liaisons Point à Point (PtP) et Point à MultiPoint (PtMP) en milieu outdoor. Son antenne intégrée de 16 dBi et sa puissance d'émission élevée lui permettent d'atteindre des portées impressionnantes tout en maintenant une excellente qualité de signal. Le boîtier résistant aux intempéries le rend adapté aux déploiements en extérieur dans des conditions difficiles. Il est alimenté via PoE passif ce qui simplifie son installation en hauteur.",
@@ -175,8 +175,8 @@ const ALL_PRODUCTS = [
   {
     slug: 'routerboard-rb2011uias-rm',
     image: [
-      '/produits/RB2011UiAS-RM/1.png',
-      '/produits/RB2011UiAS-RM/2.png'
+      '/produits/RB2011UiAS-RM/1.webp',
+      '/produits/RB2011UiAS-RM/2.webp'
     ],
     titre: 'Routerboard RB2011UIAS-RM',
     desc: "La RB2011UiAS-RM est une plateforme de routage multiports économique et polyvalente, conçue pour une utilisation en rack dans les salles serveurs et datacenters. Elle combine 5 ports Gigabit Ethernet et 5 ports Fast Ethernet, un port SFP pour fibre optique, un port USB et un écran LCD tactile pour la configuration locale. Elle fonctionne sous RouterOS — le système d'exploitation de MikroTik — qui offre routage dynamique, hotspot, pare-feu, MPLS, VPN, QoS avancée et bien plus. La licence L5 incluse offre des fonctionnalités étendues par rapport aux modèles d'entrée de gamme. Le port n°10 est équipé d'une fonction PoE sortant.",
