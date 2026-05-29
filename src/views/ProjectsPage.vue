@@ -46,47 +46,47 @@ export default {
     return {
       projects: [
         {
-          icon: '/projects/SaharaPeche.png',
+          icon: '/projects/SaharaPeche.webp',
           name: 'Sahara Pêche',
         },
         {
-          icon: '/projects/saharaPaie.png',
+          icon: '/projects/saharaPaie.webp',
           name: 'SAHARA PAIE',
         },
         {
-          icon: '/projects/Saharamedic.png',
+          icon: '/projects/Saharamedic.webp',
           name: 'SAHARAMEDIC',
         },
         {
-          icon: '/projects/SaharaScolar.png',
+          icon: '/projects/SaharaScolar.webp',
           name: 'SAHARA SCOLAR',
         },
         {
-          icon: '/no_image.jpg',
+          icon: '/projects/no_image.webp',
           name: 'SAHARA-CRM',
         },
         {
-          icon: '/no_image.jpg',
+          icon: '/projects/no_image.webp',
           name: 'SAHARA-INSCRIPTION-ONLINE',
         },
         {
-          icon: '/no_image.jpg',
+          icon: '/projects/no_image.webp',
           name: 'SAHARA-GED',
         },
         {
-          icon: '/no_image.jpg',
+          icon: '/projects/no_image.webp',
           name: 'SAHARA-MANUTENTION',
         },
         {
-          icon: '/no_image.jpg',
+          icon: '/projects/no_image.webp',
           name: 'SAHARA-MONEY',
         },
         {
-          icon: '/no_image.jpg',
+          icon: '/projects/no_image.webp',
           name: 'SAHARA-TRANSPORT',
         },
         {
-          icon: '/no_image.jpg',
+          icon: '/projects/no_image.webp',
           name: 'AMC/ REMARK ',
         }
       ],

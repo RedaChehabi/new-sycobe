@@ -510,19 +510,19 @@ export default {
       ],
       projects: [
         {
-          image: '/projects/SaharaPeche.png',
+          image: '/projects/SaharaPeche.webp',
           name: 'Sahara Pêche',
         },
         {
-          image: '/projects/saharaPaie.png',
+          image: '/projects/saharaPaie.webp',
           name: 'SAHARA PAIE'
         },
         {
-          image: '/projects/Saharamedic.png',
+          image: '/projects/Saharamedic.webp',
           name: 'SAHARAMEDIC'
         },
         {
-          image: '/projects/SaharaScolar.png',
+          image: '/projects/SaharaScolar.webp',
           name: 'SAHARA SCOLAR',
         },
       ],
